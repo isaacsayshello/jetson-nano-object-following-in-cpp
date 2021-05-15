@@ -3,3 +3,6 @@ This code is for the jetson nano. Basically what it does is allow the jetson nan
 It is currently relatively stable, but it needs some work done to it to make it easily usable by other people. I am currently working on that.
 
 I decided to make this because there was no object following program for the jetson nano that was written in c++.
+
+It works without having motors or arduino connected as far as know.
+Ive found that using virtualGl to run the program works the best if you want to see the camera feed. It has a much higher fps than using something like vnc or rdp.
