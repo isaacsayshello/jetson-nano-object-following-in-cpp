@@ -1,3 +1,13 @@
+
+THIS IS JUST RANDOM NOTES TO HELP BE UNDERSTAND WHAT IM ABOUT TO WRITE IN CODE
+
+things that need to be done
+1. write better read me
+2. make it so you can run the detection without being connected to the arduino
+3. clean up the 'int main' function
+
+
+
 vglrun ./my-recognition --network=coco-bottle --input-flip=rotate-180 csi://0
 vglrun ./my-recognition --input-flip=rotate-180 --network=coco-bottle --input-width=1280 --input-height=720 csi://0
 
