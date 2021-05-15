@@ -1,0 +1,33 @@
+vglrun ./my-recognition --network=coco-bottle --input-flip=rotate-180 csi://0
+vglrun ./my-recognition --input-flip=rotate-180 --network=coco-bottle --input-width=1280 --input-height=720 csi://0
+
+
+
+
+Width and heigh
+	W=1280 H=720
+
+
+
+first we need to find out how much we need to turn then 
+how fast we need to go to get there
+	if too close then we get speed of 0
+findClosest just finds  the closest one so that we work with the right one and not one in the distance.
+
+This is all in driveRobot
+
+get x1 and x2 coors 
+x2 - x1 = distance between them 
+distance between them / 2 = midpoint of picture
+
+X1 + midpoint of picture = where the midpoint of 
+the box is on the large picture.
+
+first check if position of midpointofpic is in the middle of the picture > 600 and < 680
+	if it is then go straight 
+if it is on the left side stop left wheel 
+	
+if it is on the right side stop right wheel
+after doing that it needs to check if it is close enough 
+	if "distance between them" > 900 them stop	
+else full speed

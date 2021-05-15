@@ -1,0 +1,3 @@
+/home/isaacjetsonnano/source/detectnet/CMakeFiles/rebuild_cache.dir
+/home/isaacjetsonnano/source/detectnet/CMakeFiles/my-recognition.dir
+/home/isaacjetsonnano/source/detectnet/CMakeFiles/edit_cache.dir
