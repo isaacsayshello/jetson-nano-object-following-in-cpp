@@ -3,7 +3,6 @@ THIS IS JUST RANDOM NOTES TO HELP BE UNDERSTAND WHAT IM ABOUT TO WRITE IN CODE
 
 things that need to be done
 1. write better read me
-2. make it so you can run the detection without being connected to the arduino
 3. clean up the 'int main' function
 
 
