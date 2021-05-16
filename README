@@ -4,7 +4,7 @@ It is currently relatively stable, but it needs some work done to it to make it 
 
 I decided to make this because there was no object following program for the jetson nano that was written in c++.
 
-It works without having motors or arduino connected as far as know.
+It works without having motors or arduino connected.
 Ive found that using virtualGl to run the program works the best if you want to see the camera feed. It has a much higher fps than using something like vnc or rdp.
 
 I would HIGHLY recomend working through the 'jetson-inference' tutorials on github by dusty-nv/nivida before even thinking about messing around with this. 
@@ -12,7 +12,7 @@ Also this relies on the libarys that are installed when you compile and install 
 link -> https://github.com/dusty-nv/jetson-inference
 
 
-Im working making step by step instructions but for now this is the general method.
+Im working on making step by step instructions but for now this is the general method.
 
 1. first compile and install the jetson-inference
 2. download this project
