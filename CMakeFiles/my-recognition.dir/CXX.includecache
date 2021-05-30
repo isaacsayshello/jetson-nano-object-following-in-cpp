@@ -21,6 +21,8 @@ jetson-inference/detectNet.h
 /home/isaacjetsonnano/source/detectnet/src/jetson-inference/detectNet.h
 followBottle/followBottle.h
 /home/isaacjetsonnano/source/detectnet/src/followBottle/followBottle.h
+constants.h
+/home/isaacjetsonnano/source/detectnet/src/constants.h
 everyThingIDontWantToDealWith.h
 /home/isaacjetsonnano/source/detectnet/src/everyThingIDontWantToDealWith.h
 
@@ -87,6 +89,16 @@ string.h
 -
 errno.h
 -
+followBottle.h
+/home/isaacjetsonnano/source/detectnet/src/followBottle/followBottle.h
+
+/home/isaacjetsonnano/source/detectnet/src/followBottle/intToFloat.cpp
+iostream
+-
+followBottle.h
+/home/isaacjetsonnano/source/detectnet/src/followBottle/followBottle.h
+
+/home/isaacjetsonnano/source/detectnet/src/followBottle/intToInt.cpp
 followBottle.h
 /home/isaacjetsonnano/source/detectnet/src/followBottle/followBottle.h
 

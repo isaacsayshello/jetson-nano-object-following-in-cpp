@@ -201,6 +201,54 @@ CMakeFiles/my-recognition.dir/src/followBottle/floatToInt.cpp.o.provides: CMakeF
 CMakeFiles/my-recognition.dir/src/followBottle/floatToInt.cpp.o.provides.build: CMakeFiles/my-recognition.dir/src/followBottle/floatToInt.cpp.o
 
 
+CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.o: CMakeFiles/my-recognition.dir/flags.make
+CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.o: src/followBottle/intToInt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isaacjetsonnano/source/detectnet/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.o -c /home/isaacjetsonnano/source/detectnet/src/followBottle/intToInt.cpp
+
+CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isaacjetsonnano/source/detectnet/src/followBottle/intToInt.cpp > CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.i
+
+CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isaacjetsonnano/source/detectnet/src/followBottle/intToInt.cpp -o CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.s
+
+CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.o.requires:
+
+.PHONY : CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.o.requires
+
+CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.o.provides: CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.o.requires
+	$(MAKE) -f CMakeFiles/my-recognition.dir/build.make CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.o.provides.build
+.PHONY : CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.o.provides
+
+CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.o.provides.build: CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.o
+
+
+CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.o: CMakeFiles/my-recognition.dir/flags.make
+CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.o: src/followBottle/intToFloat.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/isaacjetsonnano/source/detectnet/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.o -c /home/isaacjetsonnano/source/detectnet/src/followBottle/intToFloat.cpp
+
+CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/isaacjetsonnano/source/detectnet/src/followBottle/intToFloat.cpp > CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.i
+
+CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/isaacjetsonnano/source/detectnet/src/followBottle/intToFloat.cpp -o CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.s
+
+CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.o.requires:
+
+.PHONY : CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.o.requires
+
+CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.o.provides: CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.o.requires
+	$(MAKE) -f CMakeFiles/my-recognition.dir/build.make CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.o.provides.build
+.PHONY : CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.o.provides
+
+CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.o.provides.build: CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.o
+
+
 # Object files for target my-recognition
 my__recognition_OBJECTS = \
 "CMakeFiles/my-recognition.dir/src/detectnet.cpp.o" \
@@ -208,7 +256,9 @@ my__recognition_OBJECTS = \
 "CMakeFiles/my-recognition.dir/src/followBottle/driveRobot.cpp.o" \
 "CMakeFiles/my-recognition.dir/src/followBottle/initI2C.cpp.o" \
 "CMakeFiles/my-recognition.dir/src/followBottle/motorDrive.cpp.o" \
-"CMakeFiles/my-recognition.dir/src/followBottle/floatToInt.cpp.o"
+"CMakeFiles/my-recognition.dir/src/followBottle/floatToInt.cpp.o" \
+"CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.o" \
+"CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.o"
 
 # External object files for target my-recognition
 my__recognition_EXTERNAL_OBJECTS =
@@ -219,6 +269,8 @@ my-recognition: CMakeFiles/my-recognition.dir/src/followBottle/driveRobot.cpp.o
 my-recognition: CMakeFiles/my-recognition.dir/src/followBottle/initI2C.cpp.o
 my-recognition: CMakeFiles/my-recognition.dir/src/followBottle/motorDrive.cpp.o
 my-recognition: CMakeFiles/my-recognition.dir/src/followBottle/floatToInt.cpp.o
+my-recognition: CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.o
+my-recognition: CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.o
 my-recognition: CMakeFiles/my-recognition.dir/build.make
 my-recognition: /usr/local/cuda/lib64/libcudart_static.a
 my-recognition: /usr/lib/aarch64-linux-gnu/librt.so
@@ -228,7 +280,7 @@ my-recognition: /usr/local/cuda/lib64/libcudart_static.a
 my-recognition: /usr/lib/aarch64-linux-gnu/librt.so
 my-recognition: /usr/local/cuda/lib64/libnppicc.so
 my-recognition: CMakeFiles/my-recognition.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/isaacjetsonnano/source/detectnet/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable my-recognition"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/isaacjetsonnano/source/detectnet/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable my-recognition"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my-recognition.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -242,6 +294,8 @@ CMakeFiles/my-recognition.dir/requires: CMakeFiles/my-recognition.dir/src/follow
 CMakeFiles/my-recognition.dir/requires: CMakeFiles/my-recognition.dir/src/followBottle/initI2C.cpp.o.requires
 CMakeFiles/my-recognition.dir/requires: CMakeFiles/my-recognition.dir/src/followBottle/motorDrive.cpp.o.requires
 CMakeFiles/my-recognition.dir/requires: CMakeFiles/my-recognition.dir/src/followBottle/floatToInt.cpp.o.requires
+CMakeFiles/my-recognition.dir/requires: CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.o.requires
+CMakeFiles/my-recognition.dir/requires: CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.o.requires
 
 .PHONY : CMakeFiles/my-recognition.dir/requires
 

@@ -3,7 +3,8 @@ THIS IS JUST RANDOM NOTES TO HELP BE UNDERSTAND WHAT IM ABOUT TO WRITE IN CODE
 
 things that need to be done
 1. write better read me
-3. clean up the 'int main' function
+2. major problem-do to the sloppyness in the wheels it always over shoots.
+	2a. I need to switch from having hard lines to just slowing the wheel down when i get off the target.
 
 
 

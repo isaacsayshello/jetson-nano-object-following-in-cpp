@@ -6,6 +6,7 @@
 #include "jetson-utils/videoOutput.h"
 #include "jetson-inference/detectNet.h"
 #include "followBottle/followBottle.h" 
+#include "constants.h"
 #ifdef HEADLESS
 	#define IS_HEADLESS() "headless"	// run without display
 #else
@@ -96,10 +97,14 @@ int main( int argc, char** argv )
 		net->PrintProfilerTimes();
 		//--------------------------------------------------------------my stuff----------------------
 		//what i have added so far.
-		std::cout << "MUY STUFFFFFFFFFFFFFFFFFFFFFFF  ";
+		std::cout << "MUY STUFFFFFFFFFFFFFFFFFFFFFFF  \n";
+
 		followBottle.findClosest(detections, numDetections); 
 		followBottle.driveRobot();
-		//followBottle.skidRight(1);
+	
+		//followBottle.setSpeeds(followBottle.intToFloat(100, 0, 590, 0, 1), 1);
+		
+		std::cout << "THIS IS THE END OF THIS PROCESSING LOOP\n";
 	}
 	
 
