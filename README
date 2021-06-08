@@ -16,11 +16,12 @@ Im working on making step by step instructions but for now this is the general m
 
 1. first compile and install the jetson-inference
 2. download this project
-3. try to compile it
+3. DELETE CMakeCache.txt and CMakeFiles otherwise cmake won't work
+4. try to compile it
 	3a. cmake . 
-4. if/when it fails then install the libarys that are missing.
-5. when cmake works you can then compile it.
+5. if/when it fails then install the libarys that are missing.
+6. when cmake works you can then compile it.
 	5a. make -j5
-6. if it compiled fine then you will be able to see the executable.
-7. to start it you just run the sh file which has the whole long command in it instead of typing it all by hand.
+7. if it compiled fine then you will be able to see the executable.
+8. to start it you just run the sh file which has the whole long command in it instead of typing it all by hand.
 	7a. bash startFollowing.sh 
