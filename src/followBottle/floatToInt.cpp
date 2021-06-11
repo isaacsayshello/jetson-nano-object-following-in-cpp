@@ -1,3 +1,5 @@
+//this file translates a float value range into an int range used to run the arduino.
+//example: -1, 1 to 0, 255
 #include <iostream>
 #include "followBottle.h"
 

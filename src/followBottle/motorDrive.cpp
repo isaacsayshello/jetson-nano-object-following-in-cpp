@@ -35,6 +35,8 @@ void FollowBottle::forward(float speed)
     buf[0] = temp;
     buf[1] = temp;
 
+    std::cout << "speeds sent to arduino: " << static_cast<int>(buf[0]) << '\n' << static_cast<int>(buf[1]) << '\n';
+
    //this writes to the arduino 
     if (write(m_file, buf, 2) != 2 ){
         //  ERROR HANDLING: i2c transaction failed  /
@@ -47,6 +49,34 @@ void FollowBottle::forward(float speed)
  
 
 }
+
+//********************SETSPEEDS********
+void FollowBottle::setSpeeds(float speed1, float speed2)
+{
+        
+    int temp1{ floatToInt(speed1, -1, 1, 0, 255) };
+    int temp2{ floatToInt(speed2, -1, 1, 0, 255) };
+
+    char buf[2] = {};
+//buf[0] is left side
+//buf[1] is right side
+    buf[0] = temp1;
+    buf[1] = temp2;
+    std::cout << "speeds sent to arduino: " << static_cast<int>(buf[0]) << '\n' << static_cast<int>(buf[1]) << '\n';
+
+   //this writes to the arduino 
+    if (write(m_file, buf, 2) != 2 ){
+        //  ERROR HANDLING: i2c transaction failed  /
+        printf("Failed to write to the i2c bus.\n");
+       // buffer = g_strerror(errno);
+//        printf(buffer);
+        printf("\n\n");
+
+    }
+ 
+
+}
+
 //*****************BACKWARD******************
 void FollowBottle::backward(float speed)
 {
@@ -65,6 +95,7 @@ void FollowBottle::right(float speed)
 //buf[1] is right side
     buf[0] = floatToInt(speed, -1, 1, 0, 255);
     buf[1] = floatToInt(speed, 1, -1, 0, 255);
+    std::cout << "speeds sent to arduino: " << static_cast<int>(buf[0]) << '\n' << static_cast<int>(buf[1]) << '\n';
    // buf[1] = 127;
 
    //this writes to the arduino 
@@ -93,6 +124,7 @@ void FollowBottle::left(float speed)
     buf[0] = floatToInt(speed, 1, -1, 0, 255);
     //buf[0] = 127;
     buf[1] = floatToInt(speed, -1,  1, 0, 255);
+    std::cout << "speeds sent to arduino: " << static_cast<int>(buf[0]) << '\n' << static_cast<int>(buf[1]) << '\n';
 
    //this writes to the arduino 
     if (write(m_file, buf, 2) != 2 ){
@@ -120,6 +152,7 @@ void FollowBottle::skidLeft(float speed)
    // buf[0] = floatToInt(speed, 1, -1, 0, 255);
     buf[0] = 127;
     buf[1] = floatToInt(speed, -1,  1, 0, 255);
+    std::cout << "speeds sent to arduino: " << buf[0] << '\n' << buf[1] << '\n';
 
    //this writes to the arduino 
     if (write(m_file, buf, 2) != 2 ){
@@ -146,6 +179,7 @@ void FollowBottle::skidRight(float speed)
 //buf[1] is right side
     buf[0] = floatToInt(speed, 1, -1, 255, 0);
     buf[1] = 127;
+    std::cout << "speeds sent to arduino: " << static_cast<int>(buf[0]) << '\n' << static_cast<int>(buf[1]) << '\n';
    // buf[1] = floatToInt(speed, -1,  1, 0, 255);
 
    //this writes to the arduino 

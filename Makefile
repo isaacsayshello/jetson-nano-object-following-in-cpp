@@ -258,6 +258,60 @@ src/followBottle/initI2C.cpp.s:
 	$(MAKE) -f CMakeFiles/my-recognition.dir/build.make CMakeFiles/my-recognition.dir/src/followBottle/initI2C.cpp.s
 .PHONY : src/followBottle/initI2C.cpp.s
 
+src/followBottle/intToFloat.o: src/followBottle/intToFloat.cpp.o
+
+.PHONY : src/followBottle/intToFloat.o
+
+# target to build an object file
+src/followBottle/intToFloat.cpp.o:
+	$(MAKE) -f CMakeFiles/my-recognition.dir/build.make CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.o
+.PHONY : src/followBottle/intToFloat.cpp.o
+
+src/followBottle/intToFloat.i: src/followBottle/intToFloat.cpp.i
+
+.PHONY : src/followBottle/intToFloat.i
+
+# target to preprocess a source file
+src/followBottle/intToFloat.cpp.i:
+	$(MAKE) -f CMakeFiles/my-recognition.dir/build.make CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.i
+.PHONY : src/followBottle/intToFloat.cpp.i
+
+src/followBottle/intToFloat.s: src/followBottle/intToFloat.cpp.s
+
+.PHONY : src/followBottle/intToFloat.s
+
+# target to generate assembly for a file
+src/followBottle/intToFloat.cpp.s:
+	$(MAKE) -f CMakeFiles/my-recognition.dir/build.make CMakeFiles/my-recognition.dir/src/followBottle/intToFloat.cpp.s
+.PHONY : src/followBottle/intToFloat.cpp.s
+
+src/followBottle/intToInt.o: src/followBottle/intToInt.cpp.o
+
+.PHONY : src/followBottle/intToInt.o
+
+# target to build an object file
+src/followBottle/intToInt.cpp.o:
+	$(MAKE) -f CMakeFiles/my-recognition.dir/build.make CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.o
+.PHONY : src/followBottle/intToInt.cpp.o
+
+src/followBottle/intToInt.i: src/followBottle/intToInt.cpp.i
+
+.PHONY : src/followBottle/intToInt.i
+
+# target to preprocess a source file
+src/followBottle/intToInt.cpp.i:
+	$(MAKE) -f CMakeFiles/my-recognition.dir/build.make CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.i
+.PHONY : src/followBottle/intToInt.cpp.i
+
+src/followBottle/intToInt.s: src/followBottle/intToInt.cpp.s
+
+.PHONY : src/followBottle/intToInt.s
+
+# target to generate assembly for a file
+src/followBottle/intToInt.cpp.s:
+	$(MAKE) -f CMakeFiles/my-recognition.dir/build.make CMakeFiles/my-recognition.dir/src/followBottle/intToInt.cpp.s
+.PHONY : src/followBottle/intToInt.cpp.s
+
 src/followBottle/motorDrive.o: src/followBottle/motorDrive.cpp.o
 
 .PHONY : src/followBottle/motorDrive.o
@@ -309,6 +363,12 @@ help:
 	@echo "... src/followBottle/initI2C.o"
 	@echo "... src/followBottle/initI2C.i"
 	@echo "... src/followBottle/initI2C.s"
+	@echo "... src/followBottle/intToFloat.o"
+	@echo "... src/followBottle/intToFloat.i"
+	@echo "... src/followBottle/intToFloat.s"
+	@echo "... src/followBottle/intToInt.o"
+	@echo "... src/followBottle/intToInt.i"
+	@echo "... src/followBottle/intToInt.s"
 	@echo "... src/followBottle/motorDrive.o"
 	@echo "... src/followBottle/motorDrive.i"
 	@echo "... src/followBottle/motorDrive.s"

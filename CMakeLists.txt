@@ -27,6 +27,9 @@ cuda_add_executable(my-recognition
 	./src/followBottle/initI2C.cpp
 	./src/followBottle/motorDrive.cpp
 	./src/followBottle/floatToInt.cpp
+	./src/followBottle/intToInt.cpp
+	./src/followBottle/intToFloat.cpp
+
 
 	)
 

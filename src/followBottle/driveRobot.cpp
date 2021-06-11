@@ -1,3 +1,5 @@
+//this FILE HAS THE CODE THAT FIGURE OUT WHICH WHEELS TO RUN
+
 #include "followBottle.h"
 #include "../constants.h"
 
@@ -22,24 +24,45 @@ void FollowBottle::driveRobot()
 
 
 	std::cout << "The value of midpointLineOfObject = " 
-		<< midpointLineOfObject;
+		<< midpointLineOfObject << '\n';
 
 	if ( midpointLineOfObject > constants::leftMiddleOfPicLine 
 		&& midpointLineOfObject < constants::rightMiddleOfPicLine)
 	{
-		forward(1);
+		forward(constants::speedOfForward);
 		std::cout << "The robot is going straight\n";
 	}	
 	else if ( midpointLineOfObject < constants::leftMiddleOfPicLine )
 	{
-		skidLeft(0.75);
+		//heres where i need to modify
+
+		setSpeeds(
+			intToFloat(midpointLineOfObject, 
+			constants::leftLeftMiddleOfPicLine, 
+			constants::leftMiddleOfPicLine, 0, 1), 
+			1);
+
+	//	skidLeft(constants::speedOfSkidLeft);
 		std::cout << "The robot stoped left wheel and is turning left.\n";
 	}
 	else if ( midpointLineOfObject > constants::rightMiddleOfPicLine )
 	{
-		skidRight(0.75);
-		std::cout << "The robot stoped right wheel and is turning right.\n";
+	//	skidRight(constants::speedOfSkidRight);
+	
+		setSpeeds(1, 
+			intToFloat(midpointLineOfObject, 
+			constants::rightRightMiddleOfPicLine, 
+			constants::rightMiddleOfPicLine, 0, 1)
+			);
+
+		//std::cout << "The robot stoped right wheel and is turning right.\n";
 	}
+	
 
 
 }
+/*
+ * this is what im going to do
+ * so basically i am going to use a translate function to translate the width of say 0-600 with the
+ * midpoint of the picture  being 500 to 0-255 which is the forward reverse of arduino 
+ */
