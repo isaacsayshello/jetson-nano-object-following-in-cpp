@@ -36,7 +36,11 @@ void FollowBottle::driveRobot()
 	{
 		//heres where i need to modify
 
-		setSpeeds(intToFloat(midpointLineOfObject, 0, constants::leftMiddleOfPicLine, 0, 1), 1);
+		setSpeeds(
+			intToFloat(midpointLineOfObject, 
+			constants::leftLeftMiddleOfPicLine, 
+			constants::leftMiddleOfPicLine, 0, 1), 
+			1);
 
 	//	skidLeft(constants::speedOfSkidLeft);
 		std::cout << "The robot stoped left wheel and is turning left.\n";
@@ -44,7 +48,13 @@ void FollowBottle::driveRobot()
 	else if ( midpointLineOfObject > constants::rightMiddleOfPicLine )
 	{
 	//	skidRight(constants::speedOfSkidRight);
-		setSpeeds(1, intToFloat(midpointLineOfObject, 1278, constants::rightMiddleOfPicLine, 0, 1));
+	
+		setSpeeds(1, 
+			intToFloat(midpointLineOfObject, 
+			constants::rightRightMiddleOfPicLine, 
+			constants::rightMiddleOfPicLine, 0, 1)
+			);
+
 		//std::cout << "The robot stoped right wheel and is turning right.\n";
 	}
 	
